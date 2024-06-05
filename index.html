@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+     <!-- Bootstrap CSS -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="./css/main.css" />
+     <script
+      src="https://kit.fontawesome.com/fafe08d498.js"
+      crossorigin="anonymous"
+    ></script>
+    <title> CECI EXTRATALLE</title>
+  </head>
+  <body>
+
+<!-- inicia navbar -->
+    <nav class="navbar  fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio"> <img class="logo1" src="./img/logos.svg" alt="logo extraTalle" /></a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          
+          <div class="offcanvas-body">
+            <div class="logoLinea">
+              <a class="navbar-brand" href="#inicio"> <img class="logo2" src="./img/logos.svg" /></a>
+              <img class="lineaSeparadora" src="./img/separador.png" alt="linea separadora"/>
+            </div>  
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active mTitleM" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mTitleM" href="#Quienes somos">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mTitleM" href="#Compromiso">Compromiso</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mTitleM" href="#Visitanos">Visitanos</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- fin navbar  -->
+<!-- inicia sección inicio -->
+
+    <section id="inicio">
+      <div class="inicio-slogan">
+        <h1 class="mDisplayS center">Moda que se <br>ajusta a vos, no al <br>revés</h1>
+        
+        <h3 class="mTitleM center">
+          ¡Vestite con estilo y encontrá prendas que se adapatan a tu estilo de
+          vida!
+        </h3>
+        <div class="backInicio">  
+         <button class="boton mLabelM d-sm-block d-md-none d-lg-none">Explorar la colección</button>
+        
+         <button class="boton d-none d-md-block d-lg-block">Explorar la colección</button>
+        </div>
+        </div>
+
+    </section>
+<!-- fin sección inicio -->
+<!-- inicia sección nuestras prendas -->
+    <section id="nuestrasPrendas" class="section">
+      <div class="titulos">
+        <p class="mHeadlineM">Nuestras prendas</p>
+        <p class="mBodyM">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
+
+      </div>
+
+      <div class="container">
+        <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carousel-inner">
+
+          <!--  slides dinámicos -->
+          </div>
+          
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+           <!-- Indicadores -->
+           <ol class=" rounded-indicators d-md-none" id="carousel-indicators">
+            
+           </ol> 
+          <button class="irATienda d-md-none">
+            <p class="textIrATienda mLabelM center">Ir a Tienda</p>
+          </button>
+          
+          
+        </div>
+
+
+    </section>
+
+<!-- fin sección nuestras prendas -->
+<!-- inicia sección productos -->
+<section id= "verMas" class="section">
+  <div class="vermas-prenda">
+    <figure>
+      <img src="./img/inicio-vermas-1.jpg" alt="">
+      <div class="capa d-none">
+        <button class="boton">Ver más</button>
+      </div>
+    </figure>
+    <figure>
+      <img src="./img/inicio-vermas-2.jpg" alt="">
+      <div class="capa">
+        <button class="boton">Ver más</button>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- fin sección productos -->
+
+<!-- inicia sección quiénes somos -->
+
+<section id="somos" >
+      <div class="quienes">
+        <h1 class="mHeadlineM">¿Quiénes somos?</h1>
+        <p class="mBdyM">
+          Con más de 20 años de trayectoria en al industria, somos una empresa
+          dedicada a la venta de indumentaria de talles grandes con origen en la
+          provincia de Mendoza.
+        </p>
+      </div>
+      <div class="servicios">
+        <div class="servicio">
+          <div class="imagen">
+            <img src="./img/regla.svg" />
+          </div>
+          <div>
+            <h3 class="mHeadlineS">Todos los talles</h3>
+            <p class="mBodyM">Disponibilidad desde el 40 a 80.</p>
+          </div>
+        </div>
+        <div class="servicio">
+          <div class="imagen">
+            <img src="./img/gancho.svg" />
+          </div>
+          <div>
+            <h3 class="mHeadlineS">Gran variedad de ropa</h3>
+            <p class="mBodyM">
+              Tenemos una amplia oferta para satisfacer las necesidades de todos
+              los clientes.
+            </p>
+          </div>
+        </div>
+        <div class="servicio">
+          <div class="imagen">
+            <img src="./img/corazón.svg" />
+          </div>
+          <div>
+            <h3 class="mHeadlineS">Atención personalizada</h3>
+            <p class="mBodyM">
+              Nos gusta construir relaciones a largo plazo basadas en la
+              confianza y conexiòn genuina.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="banner-somos">
+        
+        <h1 class="d-sm-block d-md-none d-lg-none mDislayS white stretch">En Extra Talle buscamos que puedas vestirte como quieras.</h1>
+        <h2 class="mTitleL white">Somos auténticos, como vos.</h2>
+        <button class="boton mLabelM white stretch">Descubrir más</button>
+      </div>
+    </section>
+
+<!-- fin sección quiénes somos -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--  archivo scripts JS personalizado -->
+    <script src="./js/carousel.js"></script>
+
+
+  </body>

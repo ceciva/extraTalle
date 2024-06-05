@@ -1,0 +1,43 @@
+#inicio{
+    padding-top: 15vh;
+    background-color: $navbar;
+    .inicio-slogan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 800px;
+        gap: 30px;
+        .backInicio{
+            display: flex;
+            justify-content: center;
+            align-items:start;
+            width: 85vw;
+            height: 50vh;
+            background-image: url(../img/portadaMobile.png);
+                     
+            .boton {
+                display: inline-flex;
+                padding: 20px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: $black;
+                color: #fafafa;
+                text-align: center;
+                text-wrap: nowrap;
+                
+            }
+        }
+        .imagenInicioMobile{
+            width: 360px;
+            height: 458px;
+            flex-shrink: 0;
+        }
+    
+          
+    }
+    
+}

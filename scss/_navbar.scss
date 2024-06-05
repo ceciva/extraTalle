@@ -1,0 +1,46 @@
+nav{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    padding: 12px 16px;
+    background-color: $navbar;
+    // margin-bottom: 10vh;
+    .logo1{
+        width: 20vw;
+        height: auto;
+        flex-shrink: 0;
+        margin-left: 35vw;
+    }
+    .logo2{
+       width: 18vw; 
+    }
+
+    .offcanvas{
+        background-color: $cream;
+    }
+    .lineaSeparadora{
+        background-color: $black;
+        width: 161px;
+        height: 2px ;
+
+    }
+    .logoLinea{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px; 
+        li{
+            color:$black;
+            text-align: right;
+           
+             
+        } 
+    }
+}
+
