@@ -12,6 +12,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 //FONTS WEB
 // web/display
 .wDisplayL{
