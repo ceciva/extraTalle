@@ -1,5 +1,5 @@
 #inicio{
-    padding-top: 15vh;
+    padding-top: 10vh;
     background-color: $navbar;
     .inicio-slogan{
         display: flex;
@@ -13,8 +13,9 @@
             display: flex;
             justify-content: center;
             align-items:start;
-            width: 85vw;
-            height: 50vh;
+            width: 100vw;
+            height: 458px;
+            flex-shrink: 0;
             background-image: url(../img/portadaMobile.png);
                      
             .boton {
@@ -31,12 +32,6 @@
                 
             }
         }
-        .imagenInicioMobile{
-            width: 360px;
-            // height: 458px;
-            flex-shrink: 0;
-        }
-    
           
     }
     

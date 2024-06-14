@@ -2,7 +2,6 @@
     background-color: #f5f3f1;
     display: flex;
     padding-top: 10vh;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,19 +24,16 @@
       
       .servicio {
         display: flex;
-        padding: 2.5vh;
+        flex-direction: column;
+        padding: 24px 24px;
+        border-radius: 8px;
+        background: #FAFAFA;
+        box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.05);
+        margin-bottom: 4vh;
         align-items: center;
         gap: 4.8vw;
         align-self: stretch;
 
-        @media(max-width:768px){
-          flex-direction: column;
-          padding: 24px 24px;
-          border-radius: 8px;
-          background: #FAFAFA;
-          box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.05);
-          margin-bottom: 4vh;
-        }
         .imagen {
           background-color: $red;
           display: flex;
@@ -55,11 +51,8 @@
             width: 24px;
             height: 24px;
             flex-shrink: 0;
-           
           }
         }
-        
-        
       }
     }
     .banner-somos {
@@ -68,18 +61,17 @@
         width: 100vw;
         background-size: cover;
         align-self: stretch;
-        height: 85vh;
         display: flex;
         flex-direction: column;
         text-align: start;
         padding-left: 10vw;
         padding-top: 14vh;
         gap: 5vh;
-        padding-inline-end: 50%;
+        
        
       .boton {
         background-color: $black;
-        width: 70vw;
+        width: 80vw;
         display: flex;
         padding: 20px 30px;
         justify-content: center;
@@ -88,5 +80,6 @@
         align-self: stretch;
         
       }
+      
     }
   }
