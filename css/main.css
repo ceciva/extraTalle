@@ -498,25 +498,38 @@ body {
 }
 
 #carouselCommentarios {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 10vh;
   background: #FAFAFA;
 }
 #carouselCommentarios .contenedorCarousel {
   width: 80vw;
-  height: 60vh;
+  height: 90vh;
   border-radius: 4px;
   background-color: #FAFAFA;
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
+#carouselCommentarios .contenedorCarousel .comillas {
+  margin-left: 32vw;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 15vw;
+  color: #0D0D0D;
+  align-self: center;
+}
 #carouselCommentarios .contenedorCarousel #carouselExampleDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 80vw;
   height: 60vh;
   border-radius: 12px;
   background: #FAFAFA;
+  gap: 40px;
   /* elevacion */
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
@@ -527,8 +540,8 @@ body {
 #carouselCommentarios .contenedorCarousel #carouselExampleDark .rounded-indicators button {
   display: inline-block;
   background-color: #0D0D0D;
-  height: 1vh;
-  width: 3vw;
+  height: 8px;
+  width: 8px;
   margin-right: 4vw;
   border-radius: 50%;
   opacity: 0.5;
@@ -538,22 +551,23 @@ body {
   opacity: 1;
 }
 #carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner {
+  margin-top: 8vh;
   display: flex;
   width: 80vw;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 80vw;
   flex-shrink: 0;
   align-self: stretch;
 }
 #carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-item {
+  flex-direction: column;
   width: 80vw;
   height: 50vh;
+  gap: 10px;
 }
 #carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-item .estrellas {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -564,28 +578,22 @@ body {
   flex-direction: column;
   width: 60vw;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
-  color: var(--highlight-texto-secundario, #515151);
-  text-align: center;
-  font-family: Inter;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+
+#compromiso {
+  height: 88vh;
+  width: 100%;
+  background-image: url(../img/image-24mobile.png);
+  background-size: cover;
+  background-size: 100%;
 }
-@media (max-width: 768px) {
-  #carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-caption .textoComentario {
-    font-size: 1rem;
-    margin-top: 4rem;
-  }
-}
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-caption .nroComentario {
-  color: var(--highlight-texto-secundario, #515151);
-  text-align: center;
-  /* web/text/medium */
-  font-family: Inter;
-  font-size: 1.12rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+#compromiso .compromiso {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  padding: 48px 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=main.css.map */

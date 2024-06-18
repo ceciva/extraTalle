@@ -1,0 +1,27 @@
+#compromiso {
+    
+    height: 88vh;
+    width: 100%;
+    padding: 48px 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    
+    .compromiso {
+        background-color: rgba(0,0,0,0,0.50);
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        
+         
+    }
+    img {
+      width: 100vw;
+      height: 88vh;
+     
+    }  
+   
+  
+}

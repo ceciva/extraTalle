@@ -1,30 +1,36 @@
 #carouselCommentarios{
-    display: inline-flex; 
+    display: flex; 
     flex-direction: column;
     justify-content: center;   
     align-items: center;
-    gap: 48px;
+    gap: 10vh;
     background: #FAFAFA;
     .contenedorCarousel{
         width:80vw;
-        height: 60vh;
+        height: 90vh;
         border-radius: 4px;
         background-color: #FAFAFA;
         box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
-        // .comillas{
-        //     margin-top: 10vh;
-        //     margin-bottom: 5vh;
-        //     width: 1vw;
-        //     color:$black;
-        //     align-self: center;
-        // }
+        .comillas{
+            margin-left: 32vw;
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            width: 15vw;
+            color:$black;
+            align-self: center;
+        }
         
 
     #carouselExampleDark{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       width: 80vw;
       height: 60vh;
       border-radius: 12px;
       background: #FAFAFA;
+      gap: 40px;
       /* elevacion */
       box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 
@@ -35,9 +41,9 @@
               
               button {
                 display: inline-block;
-                background-color: #0D0D0D;
-                height: 1vh;
-                width: 3vw;
+                background-color: $black;
+                height: 8px;
+                width: 8px;
                 margin-right: 4vw;
                 border-radius: 50%;
                 opacity: 0.5;
@@ -49,23 +55,26 @@
               }
             }
             .carousel-inner{
+              margin-top: 8vh;
               display: flex;
               width: 80vw;
               flex-direction: row;
-              justify-content: center;
+              justify-content: space-between;
               align-items: center;
               gap: 80vw;
+          
               flex-shrink: 0;
               align-self: stretch;
 
               .carousel-item{
-                
+                // display: flex;
+                flex-direction: column;
                 width: 80vw;
                 height:50vh;
+                gap: 10px;
+                
                 
                   .estrellas{
-                    margin-top: 3vh;
-                    margin-bottom: 3vh;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -78,34 +87,8 @@
                 display: flex;
                 flex-direction: column;
                 width: 60vw;
-                      
-                .textoComentario{
-                   
-                  color: var(--highlight-texto-secundario, #515151);
-                  text-align: center;
-                  font-family: Inter;
-                  font-size: 1.3rem;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: normal;
-                  @media (max-width:768px) {
-                    font-size: 1rem ;
-                    margin-top: 4rem;
-                   
-                  }
-                }
-          
-                .nroComentario{
-                  color: var(--highlight-texto-secundario, #515151);
-                  text-align: center;
-                  /* web/text/medium */
-                  font-family: Inter;
-                  font-size: 1.12rem;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-
-                }
+                
+              
               }  
               
             }
