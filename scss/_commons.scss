@@ -155,7 +155,7 @@ body{
 
 //BODY
 .mBodyM{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -190,6 +190,9 @@ body{
 }
 .white{
     color: #FAFAFA;
+}
+.underlined{
+    text-decoration: underline 3px;
 }
 .stretch{
     align-self: stretch;
