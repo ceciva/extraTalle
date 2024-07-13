@@ -1,28 +1,40 @@
 #nuestrasPrendas{
     display: flex;
     width: 100vw;
-    // height: 100vh;
     padding: 32px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
     background-color: $white;
-
+    @media(min-width:768px){
+      padding:100px 100px ;
+      gap: 48px;
+    }
+   
     .titulos{
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 12px;
         align-self: stretch; 
+        @media(min-width:768px){
+          gap: 2.4vw;
+          flex: 1 0 0;
+        }
+    }
+    .wTitulos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      button{
+        width: 30vw;
+      }
     }
     .container{
         display: flex;
         width: 90vw;
-        // height: 80vh;
-        // padding: 0vh 2vw;
         align-items: flex-start;
         gap: 24px;
         
@@ -32,10 +44,7 @@
 
           figure {
             position: relative;
-            // height: 80vh;
             overflow: hidden;
-            // height: 615px;
-            // width: 605px;
             border-radius: 4px;
           }
           
@@ -65,7 +74,6 @@
                   color: #FFF;
                   position:absolute;
                   top:15vh;
-                  left:8vw;
                   text-align: center;
                   font-family: Inter;
                   font-style: normal;
@@ -94,7 +102,12 @@
               top: 70px;
               fill: #FAFAFA;
               filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
-              
+              @media(min-width:768px){
+                width: 77px;
+                height: 77px;
+                right: -50px;
+                top:200px;
+              }
           }
           
           .irATienda{

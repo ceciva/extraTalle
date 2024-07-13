@@ -1,97 +1,133 @@
-#carouselCommentarios{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;   
-    align-items: center;
-    gap: 10vh;
+#carouselCommentarios{ 
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  background: $white;
+  
+  .comillas{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 15vw;
+    color: $black;
+    margin-left: 30vw;
+    @media (min-width:768px) {
+      width: 20vw;
+      margin-left: 30vw;
+    }
+  }
+  
+  #carouselExampleDark{
+    width: 80vw;
+    height: 60vh;
+    border-radius: 12px;
     background: #FAFAFA;
-    .contenedorCarousel{
-        width:80vw;
-        height: 90vh;
-        border-radius: 4px;
-        background-color: #FAFAFA;
-        box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
-        .comillas{
-            margin-left: 32vw;
-            margin-top: 10vh;
-            margin-bottom: 5vh;
-            width: 15vw;
-            color:$black;
-            align-self: center;
-        }
-        
+    /* elevacion */
+    box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 
-    #carouselExampleDark{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      width: 80vw;
-      height: 60vh;
-      border-radius: 12px;
-      background: #FAFAFA;
-      gap: 40px;
-      /* elevacion */
-      box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
-
-      
-          .rounded-indicators {
-              list-style: none;
-              padding: 0;
-              
-              button {
-                display: inline-block;
-                background-color: $black;
-                height: 8px;
-                width: 8px;
-                margin-right: 4vw;
-                border-radius: 50%;
-                opacity: 0.5;
-                transition: 0.3s ease-in-out;
-              }
+    
+        .rounded-indicators {
+            list-style: none;
+            padding: 0;
             
-              button.active {
-                opacity: 1;
-              }
-            }
-            .carousel-inner{
-              margin-top: 8vh;
-              display: flex;
-              width: 80vw;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-              gap: 80vw;
-          
-              flex-shrink: 0;
-              align-self: stretch;
+            button {
+              display: inline-block;
+              background-color: #0D0D0D;
+              width: 8px;
+              height: 8px;
+              margin: 0 4px;
+              border-radius: 50%;
+              opacity: 0.5;
+              transition: 0.3s ease-in-out;
 
-              .carousel-item{
-                // display: flex;
-                flex-direction: column;
-                width: 80vw;
-                height:50vh;
+              @media(min-width:768px){
+                height:16px ;
+                width:16px ;
                 gap: 10px;
                 
-                
-                  .estrellas{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    gap: 1.5vw;
-                  }
-                  
               }
-              .carousel-caption{
-                
-                display: flex;
-                flex-direction: column;
-                width: 60vw;
-                
-              
-              }  
-              
             }
-    }
-    }
-}   
+          
+            button.active {
+              opacity: 1;
+            }
+          }
+          .carousel-inner{
+            display: flex;
+            width: 80vw;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 80vw;
+            flex-shrink: 0;
+            align-self: stretch;
+
+            .carousel-item{
+              
+              width: 80vw;
+              height:50vh;
+              
+              
+                .estrellas{
+                  margin-top: 3vh;
+                  margin-bottom: 3vh;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  gap: 1.5vw;
+                  .estrella{
+                    width: 16px;
+                    height: 16px;
+                    @media(min-width:768px){
+                      width: 24px;
+                      height: 24px;
+                    }
+                  }
+                }
+                
+            }
+            .carousel-caption{
+              
+              display: flex;
+              flex-direction: column;
+              width: 60vw;
+                    
+              .comment{
+                 
+                color: var(--highlight-texto-secundario, #515151);
+                text-align: center;
+                font-family: Inter;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @media (min-width:768px) {
+                  font-size: 1.3rem ;
+                  
+                 
+                }
+              }
+        
+              .numComment{
+                color: var(--highlight-texto-secundario, #515151);
+                text-align: center;
+                /* web/text/medium */
+                font-family: Inter;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                @media (min-width:768px) {
+                  font-size:1.125rem ;
+                  
+                }
+              }
+            }  
+            
+          }
+  }
+}
+  // fin sass carousel comentarios clientes   

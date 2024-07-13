@@ -1,15 +1,32 @@
-nav{
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
     display: flex;
     width: 100vw;
     height: 10vh;
     padding: 12px 16px;
     background-color: $navbar;
-    // margin-bottom: 10vh;
+    @media(min-width:768px){
+        padding: 40px 110px;
+        align-items: center;
+        gap: 40px; 
+        background-color: transparent;
+        position:absolute;
+    }
+   
     .logo1{
         width: 20vw;
         height: auto;
         flex-shrink: 0;
         margin-left: 35vw;
+        @media(min-width:768px){
+            width:116.279px;
+            height: 48px;
+            flex-shrink: 0;
+            margin-left: 0px;
+        }
+
     }
     .logo2{
        width: 18vw; 
@@ -28,18 +45,38 @@ nav{
         display: flex;
         flex-direction: column;
         gap: 2vh;
+        @media(min-width:768px){
+            flex-direction: row;
+        }
     }
+    
     ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 24px; 
+        padding-top: 10px;
+        
         li{
             color:$black;
             text-align: right;
-           
-             
+            a{
+                // Mobile Title Medium
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @media(min-width:768px){
+                    // w\Web l\Label Large
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                }
+
+            }
         } 
     }
 }

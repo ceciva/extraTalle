@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}    
 //FONTS WEB
 // web/display
 .wDisplayL{
@@ -196,9 +196,23 @@ body{
 }
 .stretch{
     align-self: stretch;
+}\.w-30{
+    width: 30vw;
+}
+.w-55{
+    width: 55vw;
+}
+.w-60{
+    width: 60vw;
 }
 .w-80{
     width: 80vw;
+}
+.w-90{
+    width: 90vw;
+}
+.w-100{
+    width: 100vw;
 }
 .contacto {
     position: fixed;
@@ -214,3 +228,19 @@ body{
     color: #ffffff;
     font-weight: 1000;
   }
+  .boton {
+    display: inline-flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: $black;
+    color: #fafafa;
+    text-align: center;
+    text-wrap: nowrap;
+    
+}
+.section{
+  overflow-x: hidden;  
+}

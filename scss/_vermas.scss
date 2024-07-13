@@ -1,8 +1,6 @@
 #verMas{
     .vermas-prenda {
-     
       width: 100vw;
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -10,49 +8,70 @@
       gap: 24px;
       background-color: #FAFAFA;
       border-radius: 4px;
+      @media(min-width:768px){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center ;
+        gap: 24px;
+        
+      }
     
-      // figure {
-      //   position: relative;
-      //   overflow: hidden;
-      //   width: 100vw;
-      //   border-radius: 4px;
-      //   height: auto;
-      //   padding-left: 5vw;
-      //   gap: 24px;
+      figure {
+        position: relative;
+        overflow: hidden;
+        width: 90vw;
+        border-radius: 4px;
+        height: auto;
+        @media(min-width: 768px){
+          width: 45vw;
+          height: auto;
+          flex-shrink: 0;
+        }
+        
+        
               
-      // }
+      }
         img {
           width: 90vw;
-          padding-left: 5vw;
+          // padding-left: 2vw;
           object-fit: scale-down;
           transition: all 500ms ease-out;
+          @media(min-width: 768px){
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+            height: auto;
+            flex-shrink: 0;
+          }
         }
-    //   .capa {
-    //     @media(min-width:768px){
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: rgba(0, 0, 0, 0.45);
-    //     transition: all 500ms ease-out;
-    //     opacity: 0;
-    //     visibility: hidden;
+      .capa {
+        @media(min-width:768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 45vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
                
-    //     }
-        // button {
-        //   width: 70%;
-        //   box-shadow: none;
-        //   border-style: none;
-        // }
-      
+        }
+       
+        button {
+          width: 70%;
+          box-shadow: none;
+          border-style: none;
+        }
+      }
 
-    //   figure:hover > .capa {
-    //     opacity: 1;
-    //     visibility: visible;
-    //   }
+      figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+      }
     
     } 
 }

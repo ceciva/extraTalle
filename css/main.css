@@ -5,45 +5,86 @@
   padding: 0;
 }
 
-nav {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100vw;
   height: 10vh;
   padding: 12px 16px;
   background-color: #EBEEE8;
 }
-nav .logo1 {
+@media (min-width: 768px) {
+  .navbar {
+    padding: 40px 110px;
+    align-items: center;
+    gap: 40px;
+    background-color: transparent;
+    position: absolute;
+  }
+}
+.navbar .logo1 {
   width: 20vw;
   height: auto;
   flex-shrink: 0;
   margin-left: 35vw;
 }
-nav .logo2 {
+@media (min-width: 768px) {
+  .navbar .logo1 {
+    width: 116.279px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-left: 0px;
+  }
+}
+.navbar .logo2 {
   width: 18vw;
 }
-nav .offcanvas {
+.navbar .offcanvas {
   background-color: #F5F3F1;
 }
-nav .lineaSeparadora {
+.navbar .lineaSeparadora {
   background-color: #0D0D0D;
   width: 161px;
   height: 2px;
 }
-nav .logoLinea {
+.navbar .logoLinea {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-nav ul {
+@media (min-width: 768px) {
+  .navbar .logoLinea {
+    flex-direction: row;
+  }
+}
+.navbar ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  padding-top: 10px;
 }
-nav ul li {
+.navbar ul li {
   color: #0D0D0D;
   text-align: right;
+}
+.navbar ul li a {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .navbar ul li a {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
 }
 
 /* font-family: 'Inter', sans-serif*/
@@ -253,8 +294,28 @@ body {
   align-self: stretch;
 }
 
+\.w-30 {
+  width: 30vw;
+}
+
+.w-55 {
+  width: 55vw;
+}
+
+.w-60 {
+  width: 60vw;
+}
+
 .w-80 {
   width: 80vw;
+}
+
+.w-90 {
+  width: 90vw;
+}
+
+.w-100 {
+  width: 100vw;
 }
 
 .contacto {
@@ -272,28 +333,7 @@ body {
   font-weight: 1000;
 }
 
-#inicio {
-  padding-top: 10vh;
-  background-color: #EBEEE8;
-}
-#inicio .inicio-slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  gap: 30px;
-}
-#inicio .inicio-slogan .backInicio {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 100vw;
-  height: 458px;
-  flex-shrink: 0;
-  background-image: url(../img/portadaMobile.png);
-}
-#inicio .inicio-slogan .backInicio .boton {
+.boton {
   display: inline-flex;
   padding: 20px 30px;
   justify-content: center;
@@ -306,6 +346,56 @@ body {
   text-wrap: nowrap;
 }
 
+.section {
+  overflow-x: hidden;
+}
+
+#inicio {
+  padding-top: 10vh;
+  background-color: #EBEEE8;
+}
+@media (min-width: 768px) {
+  #inicio {
+    padding-top: 0vh;
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    background-size: 100vw;
+    background-color: none;
+  }
+}
+#inicio .inicio-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  #inicio .inicio-slogan {
+    padding-left: 110px;
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    gap: 48px;
+    box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+#inicio .inicio-slogan .backInicio {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100vw;
+  height: 458px;
+  flex-shrink: 0;
+  background-image: url(../img/portadaMobile.png);
+}
+@media (min-width: 768px) {
+  #inicio .inicio-slogan .backInicio {
+    background-image: none;
+  }
+}
+
 #nuestrasPrendas {
   display: flex;
   width: 100vw;
@@ -316,6 +406,12 @@ body {
   gap: 24px;
   background-color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  #nuestrasPrendas {
+    padding: 100px 100px;
+    gap: 48px;
+  }
+}
 #nuestrasPrendas .titulos {
   display: flex;
   flex-direction: column;
@@ -323,6 +419,20 @@ body {
   align-items: flex-start;
   gap: 12px;
   align-self: stretch;
+}
+@media (min-width: 768px) {
+  #nuestrasPrendas .titulos {
+    gap: 2.4vw;
+    flex: 1 0 0;
+  }
+}
+#nuestrasPrendas .wTitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#nuestrasPrendas .wTitulos button {
+  width: 30vw;
 }
 #nuestrasPrendas .container {
   display: flex;
@@ -367,7 +477,6 @@ body {
   color: #FFF;
   position: absolute;
   top: 15vh;
-  left: 8vw;
   text-align: center;
   font-family: Inter;
   font-style: normal;
@@ -393,6 +502,14 @@ body {
   top: 70px;
   fill: #FAFAFA;
   filter: drop-shadow(8px 8px 35px rgba(0, 0, 0, 0.15));
+}
+@media (min-width: 768px) {
+  #nuestrasPrendas .container #carouselExample .carousel-control-next {
+    width: 77px;
+    height: 77px;
+    right: -50px;
+    top: 200px;
+  }
 }
 #nuestrasPrendas .container #carouselExample .irATienda {
   display: flex;
@@ -432,12 +549,67 @@ body {
   background-color: #FAFAFA;
   border-radius: 4px;
 }
+@media (min-width: 768px) {
+  #verMas .vermas-prenda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+#verMas .vermas-prenda figure {
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  border-radius: 4px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  #verMas .vermas-prenda figure {
+    width: 45vw;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
 #verMas .vermas-prenda img {
   width: 90vw;
-  padding-left: 5vw;
   -o-object-fit: scale-down;
      object-fit: scale-down;
   transition: all 500ms ease-out;
+}
+@media (min-width: 768px) {
+  #verMas .vermas-prenda img {
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 768px) {
+  #verMas .vermas-prenda .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 45vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#verMas .vermas-prenda .capa button {
+  width: 70%;
+  box-shadow: none;
+  border-style: none;
+}
+#verMas .vermas-prenda figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
 }
 
 #somos {
@@ -449,6 +621,13 @@ body {
   align-items: center;
   align-self: stretch;
 }
+@media (min-width: 768px) {
+  #somos {
+    width: 100vw;
+    padding-top: 150px;
+    gap: 100px;
+  }
+}
 #somos .quienes {
   display: flex;
   width: 81.8vw;
@@ -457,11 +636,22 @@ body {
   align-items: center;
   gap: 2.4vh;
 }
+@media (min-width: 768px) {
+  #somos .quienes {
+    width: 70vw;
+  }
+}
 #somos .servicios {
   margin: 10vw;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  #somos .servicios {
+    width: 60vw;
+    margin: 0vh;
+  }
 }
 #somos .servicios .servicio {
   display: flex;
@@ -475,6 +665,46 @@ body {
   gap: 4.8vw;
   align-self: stretch;
 }
+@media (min-width: 768px) {
+  #somos .servicios .servicio {
+    flex-direction: row;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+  }
+  #somos .servicios .servicio h3 {
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #somos .servicios .servicio h3 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+@media (min-width: 768px) {
+  #somos .servicios .servicio h3 p {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #somos .servicios .servicio h3 p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 #somos .servicios .servicio .imagen {
   background-color: #d5171f;
   display: flex;
@@ -486,11 +716,23 @@ body {
   border-radius: 8px;
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
+@media (min-width: 768px) {
+  #somos .servicios .servicio .imagen {
+    width: 80px;
+    height: 80px;
+  }
+}
 #somos .servicios .servicio .imagen img {
   color: #FAFAFA;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  #somos .servicios .servicio .imagen img {
+    width: 36px;
+    height: 36px;
+  }
 }
 #somos .banner-somos {
   background-image: url("../img/image-25mobile.png");
@@ -505,6 +747,13 @@ body {
   padding-top: 14vh;
   gap: 5vh;
 }
+@media (min-width: 768px) {
+  #somos .banner-somos {
+    background-image: url("../img/image-25.png");
+    padding-top: 0vh;
+    justify-content: center;
+  }
+}
 #somos .banner-somos .boton {
   background-color: #0D0D0D;
   width: 80vw;
@@ -515,87 +764,131 @@ body {
   gap: 10px;
   align-self: stretch;
 }
+@media (min-width: 768px) {
+  #somos .banner-somos .boton {
+    width: 20vw;
+  }
+}
 
 #carouselCommentarios {
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 10vh;
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
-#carouselCommentarios .contenedorCarousel {
-  width: 80vw;
-  height: 90vh;
-  border-radius: 4px;
-  background-color: #FAFAFA;
-  box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
-}
-#carouselCommentarios .contenedorCarousel .comillas {
-  margin-left: 32vw;
+#carouselCommentarios .comillas {
   margin-top: 10vh;
   margin-bottom: 5vh;
   width: 15vw;
   color: #0D0D0D;
-  align-self: center;
+  margin-left: 30vw;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  #carouselCommentarios .comillas {
+    width: 20vw;
+    margin-left: 30vw;
+  }
+}
+#carouselCommentarios #carouselExampleDark {
   width: 80vw;
   height: 60vh;
   border-radius: 12px;
   background: #FAFAFA;
-  gap: 40px;
   /* elevacion */
   box-shadow: 8px 8px 35px 0px rgba(0, 0, 0, 0.15);
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .rounded-indicators {
+#carouselCommentarios #carouselExampleDark .rounded-indicators {
   list-style: none;
   padding: 0;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .rounded-indicators button {
+#carouselCommentarios #carouselExampleDark .rounded-indicators button {
   display: inline-block;
   background-color: #0D0D0D;
-  height: 8px;
   width: 8px;
-  margin-right: 4vw;
+  height: 8px;
+  margin: 0 4px;
   border-radius: 50%;
   opacity: 0.5;
   transition: 0.3s ease-in-out;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .rounded-indicators button.active {
+@media (min-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .rounded-indicators button {
+    height: 16px;
+    width: 16px;
+    gap: 10px;
+  }
+}
+#carouselCommentarios #carouselExampleDark .rounded-indicators button.active {
   opacity: 1;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner {
-  margin-top: 8vh;
+#carouselCommentarios #carouselExampleDark .carousel-inner {
   display: flex;
   width: 80vw;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 80vw;
   flex-shrink: 0;
   align-self: stretch;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-item {
-  flex-direction: column;
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item {
   width: 80vw;
   height: 50vh;
-  gap: 10px;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-item .estrellas {
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1.5vw;
 }
-#carouselCommentarios .contenedorCarousel #carouselExampleDark .carousel-inner .carousel-caption {
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas .estrella {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-item .estrellas .estrella {
+    width: 24px;
+    height: 24px;
+  }
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption {
   display: flex;
   flex-direction: column;
   width: 60vw;
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .comment {
+  color: var(--highlight-texto-secundario, #515151);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .comment {
+    font-size: 1.3rem;
+  }
+}
+#carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .numComment {
+  color: var(--highlight-texto-secundario, #515151);
+  text-align: center;
+  /* web/text/medium */
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  #carouselCommentarios #carouselExampleDark .carousel-inner .carousel-caption .numComment {
+    font-size: 1.125rem;
+  }
 }
 
 #compromiso {

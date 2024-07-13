@@ -17,7 +17,8 @@
   <body>
 
 <!-- inicia navbar -->
-    <nav class="navbar  fixed-top navbar-expand-lg">
+  
+    <nav class="navbar  navbar-expand-md">
       <div class="container-fluid">
         <a class="navbar-brand" href="#inicio"> <img class="logo1" src="./img/logos.svg" alt="logo extraTalle" /></a>
         
@@ -31,56 +32,72 @@
           
           <div class="offcanvas-body">
             <div class="logoLinea">
-              <a class="navbar-brand" href="#inicio"> <img class="logo2" src="./img/logos.svg" /></a>
-              <img class="lineaSeparadora" src="./img/separador.png" alt="linea separadora"/>
+              <a class="navbar-brand d-md-none d-lg-none" href="#inicio"> <img class="logo2" src="./img/logos.svg" /></a>
+              <img class="lineaSeparadora d-md-none d-lg-none" src="./img/separador.png" alt="linea separadora"/>
             </div>  
-            <ul id="hamburguer" class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li data-bs-target="#hamburger" class="nav-item">
-                <a class="nav-link active mTitleM" aria-current="page" href="#inicio">Inicio</a>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active mTitleM " aria-current="page" href="#inicio">Inicio</a>
               </li>
-              <li data-bs-target="#hamburger" class="nav-item">
-                <a class="nav-link mTitleM" href="#somos">¿Quiénes somos?</a>
+              <li  class="nav-item">
+                <a class="nav-link mTitleM "  href="#somos">¿Quiénes somos?</a>
               </li>
-              <li data-bs-target="#hamburger" class="nav-item">
-                <a class="nav-link mTitleM" href="#compromiso">Compromiso</a>
+              <li  class="nav-item">
+                <a class="nav-link mTitleM"  href="#compromiso">Compromiso</a>
               </li>
-              <li data-bs-target="#hamburger" class="nav-item">
-                <a class="nav-link mTitleM" href="#visitanos">Visitanos</a>
+              <li class="nav-item">
+                <a class="nav-link mTitleM"  href="#visitanos">Visitanos</a>
               </li>
              
             </ul>
-            
+            <button class="boton wLabelL d-none d-md-block d-lg-block">Ir a la tienda</button>
           </div>
+          
         </div>
       </div>
+
     </nav>
-<!-- fin navbar  -->
+<!--fin navbar -->
+
+   
 <!-- inicia sección inicio -->
 
-    <section id="inicio">
+    <section class="w-100" id="inicio">
       <div class="inicio-slogan">
-        <h1 class="mDisplayS center">Moda que se <br>ajusta a vos, no al <br>revés</h1>
-        
-        <h3 class="mTitleM center">
+        <h1 class="mDisplayS center d-sm-block d-md-none">Moda que se <br>ajusta a vos, no al <br>revés</h1>
+        <h1 class="wDisplayL center d-sm-none d-md-block">Moda que se ajusta a vos, <br>no al revés</h1>
+        <h3 class="mTitleM center d-sm-block d-md-none">
           ¡Vestite con estilo y encontrá prendas que se adapatan a tu estilo de
           vida!
         </h3>
-        <div class="backInicio">  
-         <button class="boton mLabelM d-sm-block d-md-none d-lg-none">Explorar la colección</button>
+        <h3 class="wTextM center d-none d-xs-none d-sm-none d-md-block">
+          ¡Vestite con estilo y encontrá prendas que se adapatan a tu estilo de
+          vida!
+        </h3>
+        <button class="boton mLabelM d-sm-none d-md-block d-lg-block">Explorar la colección</button>
+        <div class="backInicio d-none d-sm-block d-md-none d-lg-none">  
+        <button class="boton mLabelM d-sm-block d-md-none d-lg-none">Explorar la colección</button>
         
         </div>
       </div>
 
     </section>
 <!-- fin sección inicio -->
+
 <!-- inicia sección nuestras prendas -->
-    <section id="nuestrasPrendas" class="section">
-      <div class="titulos">
+    <!-- <section id="nuestrasPrendas">
+      <div class="titulos d-xs-block d-sm-block d-md-none d-lg-none">
         <p class="mHeadlineM">Nuestras prendas</p>
         <p class="mBodyM">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
-
       </div>
-
+      <div class="wTitulos w-100">
+        <div class="titulos d-xs-none d-sm-none d-md-block d-lg-block">
+          <p class="wDisplayM">Nuestras prendas</p>
+          <p class="wTextM">Encontralas en nuestra tienda y abrazá tu autenticidad con estilo.</p>
+        </div>
+        <button class="boton wLabelL  d-none d-sm-none d-md-block d-lg-block">Ir a la tienda</button>
+      </div>
+      
       <div class="container">
         <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
           <div class="carousel-inner" id="carousel-inner">
@@ -102,36 +119,42 @@
         </div>
       </div>  
 
-    </section>
+    </section> -->
 
 <!-- fin sección nuestras prendas -->
 
 <!-- inicia sección productos -->
-<section id= "verMas" class="section">
+<!-- <section id= "verMas" class="section">
   <div class="vermas-prenda">
     <figure>
       <img src="./img/inicio-vermas-1.jpg" alt="">
-      <div class="capa d-none">
+      <div class="capa">
         <button class="boton">Ver más</button>
       </div>
     </figure>
     <figure>
       <img src="./img/inicio-vermas-2.jpg" alt="">
       <div class="capa">
-        <button class="boton d-none">Ver más</button>
+        <button class="boton ">Ver más</button>
       </div>
     </figure>
   </div>
-</section>
+</section> -->
 
 <!-- fin sección productos -->
 
 <!-- inicia sección quiénes somos -->
 
-<section id="somos" >
+<!-- <section id="somos" >
       <div class="quienes">
-        <h1 class="mHeadlineM">¿Quiénes somos?</h1>
-        <p class="mBdyM">
+        <h1 class="mHeadlineM d-none d-sm-block d-md-none d-lg-none">¿Quiénes somos?</h1>
+        <h1 class="wDisplayL d-none d-xs-none d-sm-none d-md-block">¿Quiénes somos?</h1>
+        <p class="mBdyM d-none d-sm-block d-md-none">
+          Con más de 20 años de trayectoria en al industria, somos una empresa
+          dedicada a la venta de indumentaria de talles grandes con origen en la
+          provincia de Mendoza.
+        </p>
+        <p class="wHeadlineS d-none d-sm-none d-md-block w-55 center">
           Con más de 20 años de trayectoria en al industria, somos una empresa
           dedicada a la venta de indumentaria de talles grandes con origen en la
           provincia de Mendoza.
@@ -143,8 +166,8 @@
             <img src="./img/regla.svg" />
           </div>
           <div>
-            <h3 class="mHeadlineS">Todos los talles</h3>
-            <p class="mBodyM">Disponibilidad desde el 40 a 80.</p>
+            <h3>Todos los talles</h3>
+            <p>Disponibilidad desde el 40 a 80.</p>
           </div>
         </div>
         <div class="servicio">
@@ -152,8 +175,8 @@
             <img src="./img/gancho.svg" />
           </div>
           <div>
-            <h3 class="mHeadlineS">Gran variedad de ropa</h3>
-            <p class="mBodyM">
+            <h3 >Gran variedad de ropa</h3>
+            <p>
               Tenemos una amplia oferta para satisfacer las necesidades de todos
               los clientes.
             </p>
@@ -164,21 +187,25 @@
             <img src="./img/corazón.svg" />
           </div>
           <div>
-            <h3 class="mHeadlineS">Atención personalizada</h3>
-            <p class="mBodyM">
+            <h3>Atención personalizada</h3>
+            <p>
               Nos gusta construir relaciones a largo plazo basadas en la
               confianza y conexiòn genuina.
             </p>
           </div>
         </div>
       </div>
-      <div class="banner-somos ">
+      <div class="banner-somos">
         
         <p class="d-sm-block d-md-none d-lg-none mDisplayS white w-80 ">En Extra Talle buscamos que puedas vestirte como quieras.</p>
-        <h2 class="mTitleL white w-80">Somos auténticos, como vos.</h2>
-        <button class="boton mLabelM white stretch">Descubrir más</button>
+        <h2 class="mTitleL white w-80 d-sm-block d-md-none d-lg-none ">Somos auténticos, como vos.</h2>
+        <button class="boton mLabelM white stretch d-sm-block d-md-none d-lg-none">Descubrir más</button>
+        
+        <p class="d-sm-none d-md-block d-lg-block wDisplayL white w-60 ">En Extra Talle buscamos <br>que puedas vestirte <brcomo quieras.</p>
+        <h2 class="wDisplayS white w-80 d-sm-none d-md-block d-lg-block">Somos auténticos, como vos.</h2>
+        <button class="boton wLabelL white stretch d-sm-none d-md-block d-lg-block ">Descubrir más</button>
       </div>
-</section>
+</section> -->
 
 <!-- fin sección quiénes somos -->
 
@@ -188,7 +215,7 @@
 
   <div class="contenedorCarousel">
 
-  <img src="./img/comillas.png" class="comillas"/>
+    <img src="./img/comillas.png" class="comillas"/>
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
 
@@ -202,16 +229,16 @@
   
         <div class="carousel-item active" data-bs-interval="6000">
           <div class="estrellas">
-            <img src="./img/iconografía.png" class="d-block" alt="...">
-            <img src="./img/iconografía.png" class="d-block" alt="...">
-            <img src="./img/iconografía.png" class="d-block" alt="...">
-            <img src="./img/iconografía.png" class="d-block" alt="...">
-            <img src="./img/iconografía.png" class="d-block" alt="...">
+            <img src="./img/iconografía.png" class="d-block estrella" alt="...">
+            <img src="./img/iconografía.png" class="d-block estrella" alt="...">
+            <img src="./img/iconografía.png" class="d-block estrella" alt="...">
+            <img src="./img/iconografía.png" class="d-block estrella" alt="...">
+            <img src="./img/iconografía.png" class="d-block estrella" alt="...">
           </div>
         
           <div class="carousel-caption">
-            <p class="mBodyM">Comentario 1: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
-            <p class="mBodyM">Comentario 1</p>
+            <p class="comment">Comentario 1: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
+            <p class="numComment">Comentario 1</p>
           </div>
         </div> 
 
@@ -225,8 +252,8 @@
           </div>
           
           <div class="carousel-caption">
-            <p class="mBodyM">Comentario 2: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
-            <p class="mBodyM">Comentario 2</p>
+            <p class="comment">Comentario 2: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
+            <p class="numComment">Comentario 2</p>
           </div>
         </div>
 
@@ -240,8 +267,8 @@
           </div>
           
           <div class="carousel-caption">
-            <p class="mBodyM">Comentario 3: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
-            <p class="mBodyM">Comentario 3</p>
+            <p class="comment">Comentario 3: La atención del personal es increíble...super predispuesto y haciendo sentir cómodo al cliente. Lo único que tendrían que revisar son los precios que están un poco elevados pero el resto increíble</p>
+            <p class="numComment">Comentario 3</p>
           </div>
         </div>
 
@@ -256,7 +283,7 @@
 
 <!--inicia seccion compromiso  -->
 
-<section id="compromiso" >
+<!-- <section id="compromiso" >
   <div class="compromiso">
     <h1 class="mDisplayS white">Compromiso</h1>
     <h3 class="mHeadlineS white">Moda auténtica para cuerpos reales.</h3>
@@ -269,13 +296,13 @@
     
   </div>
   
-</section> 
+</section>  -->
 
 <!--fin seccion compromiso  -->
 
  <!--inicia seccion visitanos  -->
     
- <section id="visitanos" >
+ <!-- <section id="visitanos" >
   <div class="mapa">
     <h1 class="d-sm-block d-md-none d-lg-none mHeadlineL">Visitanos</h1>
     <iframe
@@ -319,12 +346,12 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!--fin seccion visitanos  -->
 
 <!-- inicia footer -->
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="footer-arriba">
     <img
       src="./img/logos-blanco.png"
@@ -387,15 +414,16 @@
   rel="noreferrer"
 >
   <i class="fa-brands fa-whatsapp" style="font-size: 35px" aria-hidden="true" ::before></i>
-</a>
+</a> -->
  
 <!-- fin footer -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!--  archivo scripts JS personalizado -->
     <script src="./js/carousel.js"></script>
-    <script src="./js/hamburguer.js"></script>
+    
 
 
   </body>
