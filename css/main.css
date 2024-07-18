@@ -361,6 +361,7 @@ body {
 
 .section {
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 #inicio {
