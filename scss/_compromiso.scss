@@ -1,13 +1,19 @@
 #compromiso {
+  
     background-image: url(../img/image-24mobile.png);
     height: 60vh;
     width: 100vw;
-    
+    @media(min-width:768px){
+      background-image: none;
+      background-color: $orange;
+      height: 100vh;
+      width: 100%;
+    }
     
     
     .compromiso {
         background-color: rgba(0,0,0,0.5);
-        padding: 35px 16px;
+        padding: 48px 16px;
         display: flex;
         width: 100vw;
         height: 60vh;
@@ -16,12 +22,91 @@
         align-items: flex-start;
         gap: 24px;
         flex-shrink: 0;
+        @media(min-width:768px){
+          background-color: $white;
+          display: flex;
+          width: 50%;
+          height: 70vh;
+          padding: 5vw;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 3vh;
+          position: absolute;
+          margin-top: 10vh;
+          margin-left: 15vw;
+          border-radius: 4px;
+          box-shadow: 24px 24px 60px 0px rgba(0, 0, 0, 0.1);
+          font-weight: 400;
+        }
+      h1{
+        color: $white;
+        font-family: Inter;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @media(min-width:768px){
+          color: $black;
+          font-family: Inter;
+          font-size: 3rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
         
+        h3{
+          color: $white;
+          font-family: Inter;
+          font-size: 1.375 rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+
+          @media(min-width:768px){
+            color: $black;
+            font-family: Inter;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+
+        }
+        p{
+          color: $white;
+          font-family: Inter;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          @media(min-width:768px){
+            color: $black;
+            font-family: Inter;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+
+          }
+        }
+
+      }  
          
     }
     img {
       width: 100vw;
       height: 88vh;
+      @media(min-width:768px){
+        padding-left: 50%;
+        height: 100vh;
+        float: right;
+        object-fit: cover;
+        
+        
+      }
      
     }  
    

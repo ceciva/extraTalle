@@ -196,7 +196,7 @@ body{
 }
 .stretch{
     align-self: stretch;
-}\.w-30{
+}.w-30{
     width: 30vw;
 }
 .w-55{
@@ -204,6 +204,9 @@ body{
 }
 .w-60{
     width: 60vw;
+}
+.w-70{
+    width: 70vw;
 }
 .w-80{
     width: 80vw;
@@ -240,6 +243,13 @@ body{
     text-align: center;
     text-wrap: nowrap;
     
+}
+.mWhiteWBlack{
+    color: $white;
+    @media(min-width:768px){
+        color: $black;
+    }
+
 }
 .section{
   overflow-x: hidden;  
