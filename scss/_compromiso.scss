@@ -1,8 +1,9 @@
 #compromiso {
   
     background-image: url(../img/image-24mobile.png);
-    height: 60vh;
+    height: auto;
     width: 100vw;
+    
     @media(min-width:768px){
       background-image: none;
       background-color: $orange;

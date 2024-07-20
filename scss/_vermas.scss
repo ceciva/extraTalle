@@ -11,8 +11,9 @@
       @media(min-width:768px){
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content:center ;
+        align-items:center;
+        justify-content:center;
+        gap: 1vw;
         
         
       }
@@ -28,6 +29,7 @@
           width: 45vw;
           height: auto;
           flex-shrink: 0;
+          padding-left: 0%;
         }
         
         
@@ -35,7 +37,7 @@
       }
         img {
           width: 90vw;
-          // padding-left: 2vw;
+          padding-left: 5vw;
           object-fit: scale-down;
           transition: all 500ms ease-out;
           @media(min-width: 768px){
@@ -44,6 +46,7 @@
             width: 45vw;
             height: auto;
             flex-shrink: 0;
+            padding-left: 0vw;
           }
         }
       .capa {
